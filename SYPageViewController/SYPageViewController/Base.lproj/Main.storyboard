@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SYPageViewController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6dv-Ds-zan">
+                                <rect key="frame" x="153.5" y="425.5" width="107" height="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="pageCurl"/>
+                                <connections>
+                                    <segue destination="1Rb-Wk-IWw" kind="presentation" id="33z-FK-oDD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PQZ-z9-fLy">
+                                <rect key="frame" x="176" y="330.5" width="62" height="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="scroll"/>
+                                <connections>
+                                    <segue destination="SG6-vd-Dne" kind="presentation" id="9d3-4a-uZY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4qt-06-VEr">
+                                <rect key="frame" x="145.5" y="520.5" width="123" height="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="pageCurl2"/>
+                                <connections>
+                                    <segue destination="Ey3-F6-vqB" kind="presentation" id="AT3-VS-3QY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="PQZ-z9-fLy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0fI-Nv-EeT"/>
+                            <constraint firstItem="4qt-06-VEr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9YE-By-lrf"/>
+                            <constraint firstItem="6dv-Ds-zan" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RFp-uu-bKE"/>
+                            <constraint firstItem="6dv-Ds-zan" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Sow-DK-Dku"/>
+                            <constraint firstItem="4qt-06-VEr" firstAttribute="top" secondItem="6dv-Ds-zan" secondAttribute="bottom" constant="50" id="ZKG-P1-cOs"/>
+                            <constraint firstItem="6dv-Ds-zan" firstAttribute="top" secondItem="PQZ-z9-fLy" secondAttribute="bottom" constant="50" id="eyt-Rt-Mjg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="96" y="-127"/>
+        </scene>
+        <!--Page Curl2 View Controller-->
+        <scene sceneID="mdD-hm-dNi">
+            <objects>
+                <pageViewController storyboardIdentifier="PageCurl2ViewController" autoresizesArchivedViewToFullSize="NO" modalTransitionStyle="flipHorizontal" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="mid" doubleSided="YES" id="Ey3-F6-vqB" customClass="PageCurl2ViewController" customModule="SYPageViewController" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VQu-U6-6L3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="987" y="603"/>
+        </scene>
+        <!--Page Curl View Controller-->
+        <scene sceneID="bJX-hu-7Y3">
+            <objects>
+                <pageViewController storyboardIdentifier="PageCurlViewController" autoresizesArchivedViewToFullSize="NO" modalTransitionStyle="crossDissolve" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="1Rb-Wk-IWw" customClass="PageCurlViewController" customModule="SYPageViewController" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hNm-jA-sMB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="987" y="-127"/>
+        </scene>
+        <!--Content View Controller-->
+        <scene sceneID="toq-nF-1vP">
+            <objects>
+                <viewController storyboardIdentifier="ContentViewController" id="AN4-3W-Scp" customClass="ContentViewController" customModule="SYPageViewController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hta-aq-h0c">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZpY-Gs-8v8">
+                                <rect key="frame" x="174.5" y="430" width="65" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="ZpY-Gs-8v8" firstAttribute="centerX" secondItem="hta-aq-h0c" secondAttribute="centerX" id="YFH-Z1-bJC"/>
+                            <constraint firstItem="ZpY-Gs-8v8" firstAttribute="centerY" secondItem="hta-aq-h0c" secondAttribute="centerY" id="mBy-cg-wT0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Xau-Hz-b7d"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="s5y-5I-GuK" appends="YES" id="G9i-Pd-dyj"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="pageLbl" destination="ZpY-Gs-8v8" id="U0D-e1-5Qr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZGP-yN-OwN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="s5y-5I-GuK">
+                    <connections>
+                        <action selector="dissmiss:" destination="AN4-3W-Scp" id="v8G-Rb-piT"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2058" y="-127"/>
+        </scene>
+        <!--Scroll Page View Controller-->
+        <scene sceneID="gsO-GK-PwE">
+            <objects>
+                <pageViewController storyboardIdentifier="ScrollPageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" pageSpacing="10" navigationOrientation="horizontal" spineLocation="none" id="SG6-vd-Dne" customClass="ScrollPageViewController" customModule="SYPageViewController" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oAW-Qt-cao" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="987" y="-802"/>
+        </scene>
+    </scenes>
+</document>
